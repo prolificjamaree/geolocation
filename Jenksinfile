@@ -1,4 +1,5 @@
-pipeline {  
+pipeline {
+}
     agent any
     tools {
   maven 'M2_HOME'
@@ -18,16 +19,9 @@ pipeline {
         }
                 stage('test') {
             steps {
-                sh 'mvn test'
-                
+                sh 'mvn test'           
             }
-        }
-                stage('test') {
-            steps {
-                echo 'Hello World'
-                
-            }
-        }
+        }     
                 stage('deploy') {
             steps {
                 echo 'Hello World'
@@ -35,4 +29,4 @@ pipeline {
             }
         }
     }
-}
+    
